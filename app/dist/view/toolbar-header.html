@@ -1,0 +1,37 @@
+<md-toolbar class="md-whiteframe-glow-z1 site-content-toolbar _md _md-toolbar-transitions">
+    <div class="md-toolbar-tools docs-toolbar-tools">
+        <md-button hide-gt-sm ng-click="vm.toggleSideNav() " class="md-icon-button ">
+            <md-icon md-svg-icon="menu "></md-icon>
+        </md-button>
+
+        <h1>Web Developer</h1>
+
+        <md-fab-speed-dial ng-cloak md-direction="down " class="md-fling md-fab-top-right ">
+            <md-fab-trigger>
+                <md-button class="md-fab">
+                    <md-icon md-svg-icon="share"></md-icon>
+                    <md-tooltip md-direction="left ">Compartilhar</md-tooltip>
+                </md-button>
+            </md-fab-trigger>
+            <md-fab-actions>
+                <md-button class="md-fab md-raised md-mini " ng-href="https://github.com/danielprogramic" target="_blank">
+                    <ng-md-icon icon=" github-circle "></ng-md-icon>
+                    <md-tooltip md-direction="left ">Github</md-tooltip>
+                </md-button>
+                <md-button class="md-fab md-raised md-mini " ng-href="https://www.linkedin.com/in/danielprogramic" target="_blank">
+                    <ng-md-icon icon="linkedin "></ng-md-icon>
+                    <md-tooltip md-direction="left ">Linkedin</md-tooltip>
+                </md-button>
+                <md-button class="md-fab md-raised md-mini " ng-href="https://twitter.com/danielprogramic" target="_blank">
+                    <ng-md-icon icon="twitter "></ng-md-icon>
+                    <md-tooltip md-direction="left ">Twitter</md-tooltip>
+                </md-button>
+                <md-button class="md-fab md-raised md-mini md-primary" ng-click="vm.clearNotes($event) ">
+                    <ng-md-icon icon="clear "></ng-md-icon>
+                    <md-tooltip md-direction="left ">Fechar</md-tooltip>
+                </md-button>
+            </md-fab-actions>
+        </md-fab-speed-dial>
+
+    </div>
+</md-toolbar>

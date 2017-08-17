@@ -1,0 +1,53 @@
+bower install angular-material
+
+instala o bower depois disso 
+você inicia o bower
+com bower init 
+ele joga a dependencia na bower.json
+depois disso você cria o bowerrc
+aponta onde vc coloca as suas dependencias 
+do front-end 
+exemplo app/bower-components
+
+instalar o typescript version 1.7
+npm install typescript@1.7 -g 
+
+depois instalar o tsd 
+npm install tsd -g  
+
+com o tsd na pasta 
+tsd install
+
+importa todo o material da pasta typings
+
+para usar o typscript configure o tsconfig.json
+ali ele iria encaminhar todo o conteudo de src para dist
+crie 2 arquivos um chamado boot.ts e o outro _all.ts
+nele o que vai acontecer é o seguinte 
+agora use o comando tsc
+ira compilar todo o conteudo de src para dist 
+
+agora vamos criar um mecanimos de watch
+que o typscript vai sempre compilar automaticamente 
+para js
+
+use o tsc.cmd -w
+
+
+vamos agora instalar oo live-server -g 
+
+serve para ouvir seu html toda alteração de estado que ele precisar.
+
+
+beautifull code 
+
+https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter
+
+ng-cloak use ele que impede a pagina de aparecer o {{}}
+
+executando o servidor live-server
+
+
+
+
+

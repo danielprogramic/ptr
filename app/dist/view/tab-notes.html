@@ -1,0 +1,103 @@
+</br>
+<div class="sample" layout="column" ng-cloak>
+    <md-content class="md-padding">
+        <md-tabs md-selected="selectedIndex" md-border-bottom md-autoselect>
+            <md-tab ng-repeat="tab in vm.selected.notes" ng-disabled="tab.disabled" label="{{tab.title}}">
+                <div class="demo-tab tab2" style="padding: 25px; text-align: center;">
+                    <div ng-bind="tab.content"></div>
+                    <br/>
+                    <md-button class="md-primary md-raised" ng-click="removeTab( tab )" ng-disabled="tabs.length <= 1">Conhecimento: {{tab.porcentagem}}</md-button>
+                </div>
+            </md-tab>
+        </md-tabs>
+    </md-content>
+</div>
+<!--<p ng-if="!vm.selected.notes.length">No notes for {{vm.selected.name}}, yet.</p>
+<md-content>
+    <md-card ng-repeat="note in vm.selected.notes | orderBy: '-date':true">
+        <md-card-content>
+            <h3>{{note.title}}</h3>
+            <p>{{note.date | date:'MM/dd/yyyy'}}</p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button ng-click="vm.removeNote(note)">Remove</md-button>
+        </md-card-actions>
+    </md-card>
+</md-content>-->
+<!--<md-content class="md-padding" layout-xs="column" layout="row">
+    <div flex-xs flex-gt-xs="50" layout="column">
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Card with image</span>
+                    <span class="md-subhead">Large</span>
+                </md-card-title-text>
+                <md-card-title-media>
+                    <div class="md-media-lg card-media"></div>
+                </md-card-title-media>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button>Action 1</md-button>
+                <md-button>Action 2</md-button>
+            </md-card-actions>
+        </md-card>
+        <md-card md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Card with image</span>
+                    <span class="md-subhead">Extra Large</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content layout="row" layout-align="space-between">
+                <div class="md-media-xl card-media"></div>
+
+                <md-card-actions layout="column">
+                    <md-button class="md-icon-button" aria-label="Favorite">
+                        <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+                    </md-button>
+                    <md-button class="md-icon-button" aria-label="Settings">
+                        <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+                    </md-button>
+                    <md-button class="md-icon-button" aria-label="Share">
+                        <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+                    </md-button>
+                </md-card-actions>
+            </md-card-content>
+        </md-card>
+    </div>
+    <div flex-xs flex-gt-xs="50" layout="column">
+        <md-card md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}" md-theme-watch>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Card with image</span>
+                    <span class="md-subhead">Small</span>
+                </md-card-title-text>
+                <md-card-title-media>
+                    <div class="md-media-sm card-media"></div>
+                </md-card-title-media>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button>Action 1</md-button>
+                <md-button>Action 2</md-button>
+            </md-card-actions>
+        </md-card>
+        <md-card md-theme="{{ showDarkTheme ? 'dark-blue' : 'default' }}" md-theme-watch>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Card with image</span>
+                    <span class="md-subhead">Medium</span>
+                </md-card-title-text>
+                <md-card-title-media>
+                    <div class="md-media-md card-media"></div>
+                </md-card-title-media>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button>Action 1</md-button>
+                <md-button>Action 2</md-button>
+            </md-card-actions>
+        </md-card>
+        <div layout layout-padding layout-align="center end" style="height:200px">
+            <md-checkbox ng-model="showDarkTheme">Use 'Dark' Themed Cards</md-checkbox>
+        </div>
+    </div>
+</md-content>-->
