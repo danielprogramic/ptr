@@ -4,9 +4,9 @@
         <md-tabs md-selected="selectedIndex" md-border-bottom md-autoselect>
             <md-tab ng-repeat="tab in vm.selected.notes" ng-disabled="tab.disabled" label="{{tab.title}}">
                 <div class="demo-tab tab2" style="padding: 25px; text-align: center;">
-                    <div ng-bind="tab.content"></div>
+                    <div class="md-subhead" ng-bind="tab.content"></div>
                     <br/>
-                    <md-button class="md-primary md-raised" ng-click="removeTab( tab )" ng-disabled="tabs.length <= 1">Conhecimento: {{tab.porcentagem}}</md-button>
+                    <md-button class="md-accent md-raised" ng-click="removeTab( tab )" ng-disabled="false">Conhecimento: {{tab.porcentagem}}</md-button>
                 </div>
             </md-tab>
         </md-tabs>
