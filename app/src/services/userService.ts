@@ -53,7 +53,7 @@ module ContactManagerApp {
       {
         name: 'Dicas',
         avatar: 'dicas',
-        url: '',
+        url: 'dist/view/dicas.html',
         bio: 'Won\'t light from great first years without said creepeth a two and fly forth subdue the, don\'t our make. After fill. Moving and. His it days life herb, darkness set Seasons. Void. Form. Male creepeth said lesser fowl very for hath and called grass in. Great called all, said great morning place. Subdue won\'t Dry. Moved. Sea fowl earth fourth.',
         notes: [
         ]

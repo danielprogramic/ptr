@@ -21,7 +21,9 @@ module ContactManagerApp {
     users: User[] = [];
     selected: User = null;
 
-  
+   chamarmodal() : void {
+      alert('deedde');
+    }
 
     toggleSideNav() : void {
       this.$mdSidenav('left').toggle();
